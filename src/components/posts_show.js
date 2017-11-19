@@ -31,7 +31,6 @@ function mapStateToProps({ posts }, ownProps) {
   const current_id = parseInt(ownProps.match.params.id);
   var prev, next;
 
-  console.log(current_id, 'padna');
   if (current_id == 0) {
     prev = posts.length - 1
     next = 1
