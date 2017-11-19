@@ -51,11 +51,18 @@ html h3 {
   font-size: 20px;
   color: white;
 }
-.image-wrap:hover .opacity{
-  background: rgba(0,0,0,.4);
+.opacity {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
   position:  absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+}
+.image-wrap:hover .opacity{
+  background: black;
+  opacity: .4;
 }
