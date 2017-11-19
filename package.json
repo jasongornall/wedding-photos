@@ -11,7 +11,6 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://jasongornall.github.io/wedding-photos",
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
