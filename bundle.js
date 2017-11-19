@@ -39467,7 +39467,7 @@
 	        _react2.default.createElement(
 	          "h3",
 	          null,
-	          "Posts"
+	          "Photos from Jason and Chelsea's Wedding!"
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -39554,13 +39554,17 @@
 	        "div",
 	        null,
 	        _react2.default.createElement(
-	          _reactRouterDom.Link,
-	          { to: "/" },
-	          "Back To Gallery"
-	        ),
-	        _react2.default.createElement(
 	          "div",
-	          null,
+	          { className: "nav" },
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	              _reactRouterDom.Link,
+	              { className: "btn btn-default btn-lg active", to: "/" },
+	              "< Back To Gallery"
+	            )
+	          ),
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
 	            { type: "button", className: "btn btn-default btn-lg active", to: "/posts/" + prev },
@@ -39570,8 +39574,26 @@
 	            _reactRouterDom.Link,
 	            { type: "button", className: "btn btn-default btn-lg active", to: "/posts/" + next },
 	            " Next "
-	          ),
-	          _react2.default.createElement("img", { className: "list-group-item", src: "/public/" + post })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "single-photo" },
+	          _react2.default.createElement(
+	            "a",
+	            { className: "image-wrap", href: "/public/" + post, download: true },
+	            _react2.default.createElement("img", { src: "/public/" + post }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "opacity" },
+	              " "
+	            ),
+	            _react2.default.createElement(
+	              "span",
+	              { className: "hover-text" },
+	              " Click to Download "
+	            )
+	          )
 	        )
 	      );
 	    }
