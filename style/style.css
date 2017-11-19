@@ -6,8 +6,23 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  vertical-align: top;
 }
-
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.nav a {
+  text-decoration: none;
+  color: blue;
+  padding: 10px;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
 .image { opacity: 0; transition: opacity 1.0s; }
 .image-loaded { opacity: 1; }
 
@@ -35,6 +50,7 @@ html h3 {
 .single-photo img {
   max-width: 100%;
   max-height: 80vh;
+  vertical-align: bottom;
 }
 .single-photo .hover-text {
   display: none;
@@ -65,4 +81,11 @@ html h3 {
 .image-wrap:hover .opacity{
   background: black;
   opacity: .4;
+}
+
+@media (max-width: 450px) {
+  .imagetiles img {
+    width: 100%;
+    height: auto;
+  }
 }
