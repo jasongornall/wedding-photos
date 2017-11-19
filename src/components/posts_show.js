@@ -1,0 +1,53 @@
+import _ from "lodash";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import { fetchPosts } from "../actions";
+
+class PostsShow extends Component {
+  componentDidMount() {
+    const { id } = this.props.match.params;
+    this.props.fetchPosts()
+  }
+
+  render() {
+    const { post, prev, next } = this.props;
+
+    return (
+      <div>
+        <Link to="/">Back To Gallery</Link>
+        <div>
+          <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${prev}`}> Previous </Link>
+          <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${next}`}> Next </Link>
+          <img className="list-group-item" src={`/public/${post}`}/>
+        </div>
+      </div>
+    );
+  }
+}
+
+function mapStateToProps({ posts }, ownProps) {
+
+  const current_id = parseInt(ownProps.match.params.id);
+  var prev, next;
+
+  console.log(current_id, 'padna');
+  if (current_id == 0) {
+    prev = posts.length - 1
+    next = 1
+  } else if (current_id == posts.length - 1) {
+    next = 0
+    prev = current_id - 1
+  } else {
+    next = current_id + 1
+    prev = current_id - 1
+  }
+
+  return {
+    prev: prev,
+    next: next,
+    post: posts[ownProps.match.params.id]
+  };
+}
+
+export default connect(mapStateToProps, { fetchPosts})(PostsShow);
