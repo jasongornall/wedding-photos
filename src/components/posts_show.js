@@ -24,7 +24,7 @@ class PostsShow extends Component {
         </div>
         <div className="single-photo">
           <a className="image-wrap" href={`/public/${post}`} download>
-            <img src={`/public/${post}`}/>
+            <img  src={`/public/${post}`}/>
             <div className="opacity"> </div>
             <span className="hover-text"> Click to Download </span>
           </a>

@@ -39454,12 +39454,7 @@
 	        return _react2.default.createElement(
 	          _reactRouterDom.Link,
 	          { key: index, to: "/posts/" + index },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "img-wrap" },
-	            _react2.default.createElement("img", { src: "/public/loading.gif" }),
-	            _react2.default.createElement("img", { src: "/public/" + post })
-	          )
+	          _react2.default.createElement("img", { className: "img-responsive", src: "/public/" + post })
 	        );
 	      });
 	    }

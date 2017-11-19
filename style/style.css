@@ -1,19 +1,12 @@
-.imagetiles .img-wrap {
+.imagetiles img {
   width: 200px;
   height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   vertical-align: top;
-  position:  relative;
-  display:  inline-block;
-}
-.imagetiles .img-wrap img{
-  position:  absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-    object-fit: cover;
 }
 body {
   max-width: 800px;
@@ -32,10 +25,7 @@ body {
 }
 .image { opacity: 0; transition: opacity 1.0s; }
 .image-loaded { opacity: 1; }
-.imagetiles {
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 html h3 {
   padding: 20px;
   text-align: center;
@@ -43,7 +33,7 @@ html h3 {
   font-family: Cookie, Helvetica, sans-serif;
 }
 
-.imagetiles .img-wrap:hover {
+.imagetiles img:hover {
   z-index: 1000;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
