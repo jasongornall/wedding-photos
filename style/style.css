@@ -1,12 +1,61 @@
 .imagetiles img {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.image { opacity: 0; transition: opacity 1.0s; }
+.image-loaded { opacity: 1; }
+
+html h3 {
+  padding: 20px;
+  text-align: center;
+  font: 400 49px/0.8 'Cookie', Helvetica, sans-serif;
+  font-family: Cookie, Helvetica, sans-serif;
+}
+
 .imagetiles img:hover {
   z-index: 1000;
-  -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+}
+.single-photo, .image-wrap {
+  position: relative;
+  text-align: center;
+}
+.image-wrap {
+  text-align: center;
+  display: inline-block;
+}
+.single-photo img {
+  max-width: 100%;
+  max-height: 80vh;
+}
+.single-photo .hover-text {
+  display: none;
+}
+
+.image-wrap:hover .hover-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+.image-wrap:hover .opacity{
+  background: rgba(0,0,0,.4);
+  position:  absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }

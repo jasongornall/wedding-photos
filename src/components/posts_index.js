@@ -22,7 +22,7 @@ class PostsIndex extends Component {
   render() {
     return (
       <div>
-        <h3>Posts</h3>
+        <h3>Photos from Jason and Chelsea's Wedding!</h3>
         <div className="container">
           <div className="row imagetiles">
             {this.renderPosts()}

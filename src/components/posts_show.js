@@ -15,11 +15,19 @@ class PostsShow extends Component {
 
     return (
       <div>
-        <Link to="/">Back To Gallery</Link>
-        <div>
+        <div className="nav">
+          <div>
+            <Link className = "btn btn-default btn-lg active" to="/">&lt; Back To Gallery</Link>
+          </div>
           <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${prev}`}> Previous </Link>
           <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${next}`}> Next </Link>
-          <img className="list-group-item" src={`/public/${post}`}/>
+        </div>
+        <div className="single-photo">
+          <a className="image-wrap" href={`/public/${post}`} download>
+            <img  src={`/public/${post}`}/>
+            <div className="opacity"> </div>
+            <span className="hover-text"> Click to Download </span>
+          </a>
         </div>
       </div>
     );
