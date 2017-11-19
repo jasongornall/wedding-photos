@@ -13,7 +13,7 @@ class PostsIndex extends Component {
     return _.map(this.props.posts, (post, index) => {
       return (
         <Link key={index} to={`/posts/${index}`}>
-          <img className="img-responsive" src={`/public/${post}`}/>
+          <img className="img-responsive" src={`/public/small/${post}`}/>
         </Link>
       );
     });

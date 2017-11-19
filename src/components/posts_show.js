@@ -23,8 +23,8 @@ class PostsShow extends Component {
           <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${next}`}> Next </Link>
         </div>
         <div className="single-photo">
-          <a className="image-wrap" href={`/public/${post}`} download>
-            <img  src={`/public/${post}`}/>
+          <a className="image-wrap" href={`/public/small/${post}`} download>
+            <img  src={`/public/small/${post}`}/>
             <div className="opacity"> </div>
             <span className="hover-text"> Click to Download </span>
           </a>
