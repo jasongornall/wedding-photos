@@ -52,36 +52,6 @@ html h3 {
   max-height: 80vh;
   vertical-align: bottom;
 }
-.single-photo .hover-text {
-  display: none;
-}
-
-.image-wrap:hover .hover-text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: block;
-  font-size: 20px;
-  color: white;
-}
-.opacity {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  position:  absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-.image-wrap:hover .opacity{
-  background: black;
-  opacity: .4;
-}
 
 @media (max-width: 450px) {
   .imagetiles img {
