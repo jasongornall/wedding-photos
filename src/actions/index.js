@@ -204,6 +204,7 @@ export function fetchPosts() {
       "ChelseaJasonWedding0491.jpg",
       "ChelseaJasonWedding0494.jpg",
       "ChelseaJasonWedding0495.jpg",
+      "received_10210606717789630.jpg",
       "ChelseaJasonWedding0496.jpg",
       "ChelseaJasonWedding0497.jpg",
       "ChelseaJasonWedding0498.jpg",
@@ -673,8 +674,7 @@ export function fetchPosts() {
       "FBphotobooth.jpg",
       "IMG_19601.jpg",
       "menu.jpg",
-      "received_1294154290731463.jpg",
-      "received_10210606717789630.jpg"
+      "received_1294154290731463.jpg"
     ]
   };
 }
