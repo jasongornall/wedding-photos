@@ -19,12 +19,12 @@ class PostsShow extends Component {
           <div>
             <Link className = "btn btn-default btn-lg active" to="/">&lt; Back To Gallery</Link>
           </div>
-          <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${prev}`}> Previous </Link>
-          <Link type="button" className="btn btn-default btn-lg active" to={`/posts/${next}`}> Next </Link>
-          <a href={`/public/large/${post}`} download type="button" className="btn btn-default btn-lg active" to={`/posts/${next}`}> Download High Resolution </a>
+          <Link type="button" className="btn btn-default btn-lg active" to={`https://jasongornall.github.io/wedding-photos/posts/${prev}`}> Previous </Link>
+          <Link type="button" className="btn btn-default btn-lg active" to={`https://jasongornall.github.io/wedding-photos/posts/${next}`}> Next </Link>
+          <a href={`https://jasongornall.github.io/wedding-photos/public/large/${post}`} download type="button" className="btn btn-default btn-lg active" to={`https://jasongornall.github.io/wedding-photos/posts/${next}`}> Download High Resolution </a>
         </div>
         <div className="single-photo">
-          <img src={`/public/medium/${post}`}/>
+          <img src={`https://jasongornall.github.io/wedding-photos/public/medium/${post}`}/>
         </div>
       </div>
     );
