@@ -17,7 +17,7 @@ class PostsShow extends Component {
       <div>
         <div className="nav">
           <div>
-            <Link className = "btn btn-default btn-lg active" to="/">&lt; Back To Gallery</Link>
+            <Link className = "btn btn-default btn-lg active" to="https://jasongornall.github.io/wedding-photos">&lt; Back To Gallery</Link>
           </div>
           <Link type="button" className="btn btn-default btn-lg active" to={`https://jasongornall.github.io/wedding-photos/posts/${prev}`}> Previous </Link>
           <Link type="button" className="btn btn-default btn-lg active" to={`https://jasongornall.github.io/wedding-photos/posts/${next}`}> Next </Link>
