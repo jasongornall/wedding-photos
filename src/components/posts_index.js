@@ -12,8 +12,8 @@ class PostsIndex extends Component {
   renderPosts() {
     return _.map(this.props.posts, (post, index) => {
       return (
-        <Link key={index} to={`/posts/${index}`}>
-          <img className="img-responsive" src={`/public/small/${post}`}/>
+        <Link key={index} to={`https://jasongornall.github.io/wedding-photos/posts/${index}`}>
+          <img className="img-responsive" src={`https://jasongornall.github.io/wedding-photos/public/small/${post}`}/>
         </Link>
       );
     });
